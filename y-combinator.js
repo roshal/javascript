@@ -9,7 +9,9 @@ const combinate = (process) => {
 }
 const factor = combinate((next) => {
 	return (number) => {
-		if (number < 2) return 1
+		if (number < 2) {
+			return 1
+		}
 		return number * next(number - 1)
 	}
 })
