@@ -1,6 +1,7 @@
+
 const b__math = Math
-//
-intersection = (array_a, array_b) => {
+
+const intersect = (array_a, array_b) => {
 	const length = b__math.min(array_a.length, array_b.length)
 	const array = []
 	let index_a = 0
@@ -20,10 +21,11 @@ intersection = (array_a, array_b) => {
 	console.log(0)
 	return array
 }
-//
+
 const array_a = [0, 1, 2]
 const array_b = [1, 2, 3]
 const array_c = [1, 2]
-const array = intersection(array_a, array_b)
+const array = intersect(array_a, array_b)
+
 console.log(array)
-console.log(array == array_c)
+console.log(array === array_c)
