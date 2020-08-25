@@ -1,3 +1,4 @@
+
 const combinate = (process) => {
 	return ((lambda) => {
 		return lambda(lambda)
@@ -7,6 +8,7 @@ const combinate = (process) => {
 		})
 	})
 }
+
 const factor = combinate((next) => {
 	return (number) => {
 		if (number < 2) {
@@ -15,5 +17,7 @@ const factor = combinate((next) => {
 		return number * next(number - 1)
 	}
 })
+
 const value = factor(6)
+
 console.log(factor(6))

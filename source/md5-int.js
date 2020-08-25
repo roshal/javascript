@@ -1,3 +1,4 @@
+
 const p__crypto = require('crypto')
 
 const map = (string = '') => {

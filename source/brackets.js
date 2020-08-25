@@ -1,3 +1,4 @@
+
 const verify = ({
 	pairs, items,
 }) => {
@@ -13,8 +14,10 @@ const verify = ({
 	}
 	return !stack.length
 }
+
 const value = verify({
 	pairs: '()<>[]{}',
 	items: '(<[{}]>)',
 })
+
 console.log(value)

@@ -1,4 +1,5 @@
-export default compose = (...functions) => {
+
+export default (...functions) => {
 	if (functions.length === 0) {
 		return (...array) => {
 			return array
